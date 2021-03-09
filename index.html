@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="instagram">
+    <meta name="description" content="Code - The Instagram Photo Feed (with Bootstrap)">
+    
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+   
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top menuPrincipal">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="letraLogo" src="https://www.seekpng.com/png/detail/1-13633_instagram-png-instagram-icon-transparent-background-instagram-logo.png" alt="" width="30" height="24"> Instagram
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <form class="d-flex">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newPostModal">
+                        Create New Post
+                      </button>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle optionCong" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-cog fa-2x optionCong" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu letraConfig" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </form>
+            </div>
+        </div>
+    </nav>
+   
+
+    <div class="container p-3">
+   
+    </div>
+
+   
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-pills justify-content-center marcoTB" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <href="#"><i class="fas fa-th fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <href="#"><i class="fas fa-square fa-2x marcoTB" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="card-group">
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://i.pinimg.com/236x/61/eb/be/61ebbe673f615bbe062f6b3b98d27040.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://i.pinimg.com/564x/82/d3/a8/82d3a8ae2fadb97923d526a849dc6ee4.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://i.pinimg.com/564x/fe/17/fa/fe17fa25008e15eff7c375c28ba66dc9.jpg" class="card-img-top" alt="...">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card-group">
+                        <div class="col">
+                            <div class="card">
+                                <img src="http://2.bp.blogspot.com/-WdtwTBXcPUY/Tne14VJfuNI/AAAAAAAAFP8/52eHAJPNPk0/s1600/images+of+nature+beauty-1.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://i.pinimg.com/564x/41/cf/74/41cf74481327c7f645c059269087d2fa.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://i.pinimg.com/564x/01/6f/b7/016fb7efdcb8366c95fa1c620cabeab6.jpg" class="card-img-top" alt="...">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card-group">
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://i.pinimg.com/564x/46/f0/75/46f0756a2c87e0221c70926a9d73f5bf.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm42NXNfpWYyIN5SLAIe-52rzbebH27FBtgw&usqp=CAU" class="card-img-top" alt="...">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card-group">
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKiQcLklh4vlWjbzipux0ohqBhoSk0mFjIQ&usqp=CAU" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAOoi0ss8DQEa9BVDrNq6ovgDZAeHO8k0kQA&usqp=CAU" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREY1BID_oni6KgUsjyJNugFDctp8DpWDo7pw&usqp=CAU" class="card-img-top" alt="...">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cátalogo Cuadricula de Fotos -->
+        </div>
+
+        <div class="tab-pane fade show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <!-- Cátalogo Listado de Fotos -->
+            <!-- Foto 1 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 1</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">1/12</div>
+                            </div>
+
+                            <img src="https://i.pinimg.com/236x/61/eb/be/61ebbe673f615bbe062f6b3b98d27040.jpg" class="card-img-top" alt="Foto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">23 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 2</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">2/12</div>
+                            </div>
+
+                            <img src="https://i.pinimg.com/564x/82/d3/a8/82d3a8ae2fadb97923d526a849dc6ee4.jpg" class="card-img-top" alt="Foto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">55 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 3</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">3/12</div>
+                            </div>
+
+                            <img src="https://i.pinimg.com/564x/fe/17/fa/fe17fa25008e15eff7c375c28ba66dc9.jpg" class="card-img-top" alt="Foto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">17 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 4</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">4/12</div>
+                            </div>
+
+                            <img src="http://2.bp.blogspot.com/-WdtwTBXcPUY/Tne14VJfuNI/AAAAAAAAFP8/52eHAJPNPk0/s1600/images+of+nature+beauty-1.jpg" class="card-img-top" alt="Foto 4">
+                            <div class="card-body">
+                                <h5 class="card-title">126 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 5</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">5/12</div>
+                            </div>
+
+                            <img src="https://i.pinimg.com/564x/41/cf/74/41cf74481327c7f645c059269087d2fa.jpg" class="card-img-top" alt="Foto 5">
+                            <div class="card-body">
+                                <h5 class="card-title">785 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 6</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">6/12</div>
+                            </div>
+
+                            <img src="https://i.pinimg.com/564x/01/6f/b7/016fb7efdcb8366c95fa1c620cabeab6.jpg" class="card-img-top" alt="Foto 6">
+                            <div class="card-body">
+                                <h5 class="card-title">7 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 7</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">7/12</div>
+                            </div>
+
+                            <img src="https://i.pinimg.com/564x/46/f0/75/46f0756a2c87e0221c70926a9d73f5bf.jpg" class="card-img-top" alt="Foto 7">
+                            <div class="card-body">
+                                <h5 class="card-title">364 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 8</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">8/12</div>
+                            </div>
+
+                            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Foto 8">
+                            <div class="card-body">
+                                <h5 class="card-title">114 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 9</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">9/12</div>
+                            </div>
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm42NXNfpWYyIN5SLAIe-52rzbebH27FBtgw&usqp=CAU" class="card-img-top" alt="Foto 9">
+                            <div class="card-body">
+                                <h5 class="card-title">749 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 10</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">10/12</div>
+                            </div>
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKiQcLklh4vlWjbzipux0ohqBhoSk0mFjIQ&usqp=CAU" class="card-img-top" alt="Foto 10">
+                            <div class="card-body">
+                                <h5 class="card-title">91 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 11</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">11/12</div>
+                            </div>
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAOoi0ss8DQEa9BVDrNq6ovgDZAeHO8k0kQA&usqp=CAU" class="card-img-top" alt="Foto 11">
+                            <div class="card-body">
+                                <h5 class="card-title">208 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+
+                    <div class="col-6 justify-content-center">
+                        <div class="card mb-3">
+                            <div class="row">
+                                <div class="col-5 m-1">Foto 12</div>
+                                <div class="col"></div>
+                                <div class="col-2 m-1">12/12</div>
+                            </div>
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREY1BID_oni6KgUsjyJNugFDctp8DpWDo7pw&usqp=CAU" class="card-img-top" alt="Foto 12">
+                            <div class="card-body">
+                                <h5 class="card-title">551 Likes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis nisi aut dolor eveniet unde, mollitia vitae excepturi eligendi tempora commodi?</p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="card-text"><small class="text-muted">
+                            <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                                    </div>
+                                    <div class="col-1">
+                                        <p class="card-text"><small class="text-muted">
+                                    <i class="fas fa-ellipsis-v fa-2x" aria-hidden="true"></i>
+                                </small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <footer class="footer py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">Copyright © LOS PIRATAS 2021</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+    <div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-1 marcoTB">
+                            <a href="#"><i class="fas fa-camera fa-2x" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-1 marcoTB">
+                            <a href="#"><i class="fas fa-map-marker-alt fa-2x" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-10"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                    <input type="submit" value="Publish" class="btn btn-primary btn-block" id="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Referencias a librerías Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
